@@ -125,7 +125,7 @@
 </button>
 <script>
     async function getLastUpdatedTime() {
-        const username = 'FEPSFY6901421';
+        const username = 'FEPSFY690421';
         const repo = 'FY6901421';
        
         const url = `https://api.github.com/repos/${username}/${repo}/commits`;
@@ -188,7 +188,7 @@
     const IntroductionCount = displayWordCount("Introduction");
     const ArticleCount = displayWordCount("Article");
     // Calculate the sum of all selected sections
-    const totalWordCount = introductionCount + articleCount;
+    const totalWordCount = IntroductionCount + ArticleCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
