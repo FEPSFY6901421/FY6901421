@@ -36,8 +36,9 @@
   <h2 style="font-family:calibri;"><b>Conference paper: Innovations to increase fuel efficiency of aircraft over time</b></h2>
   <hr>
 
-<video src="ENG0018 Presentation.mp4" width="800" height="450" controls>
-</video>
+<div class="video-container">
+  <video src="ENG0018 Presentation.mp4" width="800" height="450" controls></video>
+</div>
 
 <table>
   <tr>
@@ -187,7 +188,7 @@
     const IntroductionCount = displayWordCount("Introduction");
     const ArticleCount = displayWordCount("Article");
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + ArticleCount;
+    const totalWordCount = introductionCount + articleCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
