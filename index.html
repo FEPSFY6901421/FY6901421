@@ -124,8 +124,8 @@
 </button>
 <script>
     async function getLastUpdatedTime() {
-        const username = 'nr0025';
-        const repo = 'FY0025';
+        const username = 'FEPSFY6901421';
+        const repo = 'FY6901421';
        
         const url = `https://api.github.com/repos/${username}/${repo}/commits`;
         try {
@@ -184,10 +184,10 @@
   // Function to calculate and display total word count from selected sections
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
-    const IntroductionCount = displayWordCount("Introduction_InText");
-    const AnalysisCount = displayWordCount("Analysis_InText");
+    const IntroductionCount = displayWordCount("Introduction");
+    const ArticleCount = displayWordCount("Article");
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + AnalysisCount;
+    const totalWordCount = IntroductionCount + ArticleCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
