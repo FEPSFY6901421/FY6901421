@@ -26,6 +26,17 @@
     .myslides {
       display: none;
     }
+    .container {
+      position: relative;
+    }
+    .text-block {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      background-color: black;
+      color: white;
+      padding-left: 20px;
+      padding-right: 20px;
 
   </style>
 </head>
@@ -40,16 +51,13 @@
 <div class="video-container">
   <video src="ENG0018 Presentation.mp4" width="800" height="450" controls></video>
 </div>
-<div>
-  <img src="B747.png" alt="Boeing 747" style="width:720px;height:480px;">
+<div class="container">
+  <img src="B747.png" alt="Pan Am Boeing 747" class="image">
+  <div class="text-box">
+    <p> This is a Pan Am Boeing 747 at Frankfurt Airport in 1984</p>
+  </div>
 </div>
-.box {
-  width: 200px;
-  height: 100px;
-  border: 1px solid black;
-  padding: 10px;
-  margin: 10px;
-}
+
 
   
 <table>
